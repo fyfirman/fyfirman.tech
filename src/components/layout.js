@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import end from '../images/end.svg'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,11 +38,10 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `2rem`,
+            textAlign: 'end'
           }}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <img src={end} alt="Firmansyah Yanuar"/>
         </footer>
       </div>
     </>
