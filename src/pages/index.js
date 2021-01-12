@@ -1,11 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import * as styles from "../styles/index.styles"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Weapon from "../components/weapon"
+import Card from '../components/card'
+import Sosmed from '../components/sosmed'
 import Logo from "../images/logo.svg"
+import PacisBot from "../images/project/pacis-bot.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -26,6 +30,7 @@ const IndexPage = () => (
     </div>
 
     {/* Weapon section */}
+    <h2 style={styles.headings2}>My Weapons</h2>
     <div style={{ display: "flex", width: '100%' }}>
       <div style={{ flex: 1 }}>
         <h3 style={{ textAlign: "center" }}>Primary</h3>
@@ -44,7 +49,6 @@ const IndexPage = () => (
       <div style={{ flex: 1 }}>
         <h3 style={{ textAlign: "center" }}>Secondary</h3>
         <div>
-
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Weapon href="#" imageURI={Logo} tooltip="NodeJS" />
             <Weapon href="#" imageURI={Logo} tooltip="NodeJS" />
@@ -57,7 +61,31 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <Link to="/project/">Go to page 2</Link> <br />
+
+    {/* Project Section */}
+    <h2 style={styles.headings2}>Selected Project</h2>
+    <div style={styles.project(true)}>
+      <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={PacisBot} href="#" />
+      <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={PacisBot} href="#" />
+    </div>
+    <div style={styles.project(false)}>
+      <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={PacisBot} href="#" />
+      <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={PacisBot} href="#" />
+    </div>
+    {/* <Link to="/project/">See All Project</Link> <br /> */}
+
+    {/* Contact Section */}
+    <h2 style={styles.headings2}>Get In Touch With Me</h2>
+    <div>
+      <Sosmed name="Instagram" href="#" />
+      <Sosmed name="Youtube" href="#" />
+      <Sosmed name="Youtube" href="#" />
+      <Sosmed name="Youtube" href="#" />
+      <Sosmed name="Youtube" href="#" />
+      <Sosmed name="Youtube" href="#" />
+      <Sosmed name="Youtube" href="#" />
+    </div>
+
   </Layout >
 )
 
