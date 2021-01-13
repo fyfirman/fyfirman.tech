@@ -32,9 +32,9 @@ const IndexPage = () => {
         <div style={{ flex: "4", paddingRight: !movePhoto ? '10%' : 0 }}>
           <h1 style={styles.headings}>Hi, i’m firmansyah!</h1>
           <h2 style={styles.title}>student | developer | designer</h2>
-          <p style={styles.aboutMe}>I entered the world of computers starting from my mother's orders to type a document when I was in elementary school. From there I wondered what the computer could do. The first thing I did was create a graphic design to sell game jockey services on Facebook. I found my designs very beautiful, then I called myself as the youngest great graphic designer at the age of 12. Really childish Haha.</p>
-          <p style={styles.aboutMe}>Several years later, I was introduced to programming. I feel challenged because programming is like solving a puzzle. So, I decided to get serious in this world, because I believe that the future really needs programming. I really like making a product that many people can use. Besides, creating neat code so that it is easy for others to understand is an art over code.</p>
-          <p style={styles.aboutMe}>Now I am a final year student at Padjadjaran University and am looking for a job at a company that has strong technological qualities so that I can learn a lot from that company.</p>
+          <p style={styles.body}>I entered the world of computers starting from my mother's orders to type a document when I was in elementary school. From there I wondered what the computer could do. The first thing I did was create a graphic design to sell game jockey services on Facebook. I found my designs very beautiful, then I called myself as the youngest great graphic designer at the age of 12. Really childish Haha.</p>
+          <p style={styles.body}>Several years later, I was introduced to programming. I feel challenged because programming is like solving a puzzle. So, I decided to get serious in this world, because I believe that the future really needs programming. I really like making a product that many people can use. Besides, creating neat code so that it is easy for others to understand is an art over code.</p>
+          <p style={styles.body}>Now I am a final year student at Padjadjaran University and am looking for a job at a company that has strong technological qualities so that I can learn a lot from that company.</p>
         </div>
 
         {!movePhoto && <div style={{ flex: "1" }}>
@@ -90,6 +90,10 @@ const IndexPage = () => {
 
       {/* Contact Section */}
       <h2 style={styles.headings2}>Get In Touch With Me</h2>
+      <div style={{ maxWidth: '600px' }}>
+        <p style={styles.body}>I'm very happy to share knowledge. If you want to ask something about IT, productivy, or my college experience, feel free to discuss via Instagram.</p>
+        <p style={styles.body}>For business or collaboration please contact me via email (fyfirman@gmail.com) or Linkedin.</p>
+      </div>
       <div ref={contactRef} style={styles.sosmed}>
         <Sosmed name="Instagram" href="https://intagram.com/fyfirman" position="left" />
         <Sosmed name="Github" href="https://github.com/fyfirman" position="left" />

@@ -16,7 +16,7 @@ export const title = {
   marginBottom: 60
 }
 
-export const aboutMe = {
+export const body = {
   fontFamily: 'Nunito Sans',
   fontWeight: 500,
   fontSize: 14,
