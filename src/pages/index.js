@@ -78,14 +78,13 @@ const IndexPage = () => (
 
     {/* Contact Section */}
     <h2 style={styles.headings2}>Get In Touch With Me</h2>
-    <div>
-      <Sosmed name="Instagram" href="#" />
-      <Sosmed name="Youtube" href="#" />
-      <Sosmed name="Youtube" href="#" />
-      <Sosmed name="Youtube" href="#" />
-      <Sosmed name="Youtube" href="#" />
-      <Sosmed name="Youtube" href="#" />
-      <Sosmed name="Youtube" href="#" />
+    <div style={styles.sosmed}>
+      <Sosmed name="Instagram" href="https://intagram.com/fyfirman" position="left"/>
+      <Sosmed name="Github" href="https://github.com/fyfirman" position="left"/>
+      <Sosmed name="Email" href="mailto:fyfirman@gmail.com" position="top" middle />
+      <Sosmed name="LinkedIn" href="https://www.linkedin.com/in/fyfirman/" position="bottom" middle />
+      <Sosmed name="Youtube" href="#soon" position="right"/>
+      <Sosmed name="Medium" href="https://fyfirman.medium.com" position="right"/>
     </div>
 
   </Layout >

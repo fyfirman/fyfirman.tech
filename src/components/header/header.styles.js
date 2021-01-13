@@ -1,9 +1,12 @@
 export const root = {
-  margin: `0 auto`,
   padding: `20px`,
-  maxWidth: 960,
+  backgroundColor: 'white',
+  position: 'fixed',
+  top: 0,
+  width: '100%',
   display: 'flex',
-  backgroundColor: 'white'
+  alignItems: 'center',
+  justifyContent: 'center'
 }
 
 export const logo = {

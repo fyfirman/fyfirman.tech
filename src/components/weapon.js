@@ -11,7 +11,6 @@ const Weapon = ({ href, name, secondary }) => {
         justifyContent: 'center',
         padding: '8px',
         margin: '8px 16px',
-        // marginHorizontal: '16px',
         backgroundColor: !secondary ? 'white' : 'black',
         boxShadow: "2px 4px 12px 0px rgba(0, 0, 0, 0.1)",
         borderRadius: 0,

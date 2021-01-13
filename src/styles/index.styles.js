@@ -44,9 +44,17 @@ export const weaponType = {
   textTransform: 'none'
 }
 
+// Project Section
 export const project = (first) => ({
   display: 'flex',
   ...(first && { paddingRight: '15%' }),
   ...(!first && { paddingLeft: '15%' })
-
 })
+
+// Sosmed Section
+export const sosmed = {
+  margin: '128px 0',
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center"
+}

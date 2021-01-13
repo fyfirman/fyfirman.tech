@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
+          marginTop: 120
         }}
       >
         <main>{children}</main>
@@ -41,7 +42,7 @@ const Layout = ({ children }) => {
             textAlign: 'end'
           }}
         >
-          <img src={end} alt="Firmansyah Yanuar"/>
+          <img src={end} alt="Firmansyah Yanuar" />
         </footer>
       </div>
     </>

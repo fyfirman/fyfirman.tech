@@ -9,23 +9,17 @@ import Logo from "../../images/logo.svg"
 const Header = () => (
   <header>
     <div style={styles.root}>
-      <div style={{ margin: 0, flex: 4 }}>
-        <Link to="/" style={styles.logo}>
-          <img src={Logo} alt="" />
-        </Link>
+      <div style={{ width: '100%', maxWidth: 960, display: 'flex' }}>
+        <div style={{ margin: 0, flex: 4 }}>
+          <Link to="/" style={styles.logo}>
+            <img src={Logo} alt="fyfirman.tech" style={{ margin: 0 }} />
+          </Link>
+        </div>
+        <a href="#" style={styles.button}>Projects</a>
+        <a href="#" style={styles.button}>About</a>
       </div>
-      <a href="#" style={styles.button}>Projects</a>
-      <a href="#" style={styles.button}>About</a>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
