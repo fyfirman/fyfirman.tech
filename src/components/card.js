@@ -6,12 +6,14 @@ const Card = ({ href, imageURI, title, desc, stack }) => {
       style={{
         borderRadius: 0,
         textDecoration: 'none',
-        color: 'black'
+        color: 'black',
+        marginBottom: 64
       }}>
       <img
         src={imageURI}
         style={{
           margin: '0',
+          width: '100%'
         }}
       />
       <h4
@@ -51,12 +53,11 @@ const Card = ({ href, imageURI, title, desc, stack }) => {
           fontWeight: 700,
           fontSize: 16,
           color: 'black',
-          lineHeight: '145.1%',
-          margin: '4px 0',
+          margin: '16px 0',
           textDecoration: 'none'
         }}
       >
-        See Project
+        See Project ›
     </a >
     </div>
   )

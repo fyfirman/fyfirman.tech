@@ -17,6 +17,8 @@ import Self from "../images/self.jpg"
 const IndexPage = () => {
 
   const movePhoto = useMediaQuery({ query: '(max-width: 820px)' })
+  const moveWeapons = useMediaQuery({ query: '(max-width: 720px)' })
+  const moveProject = useMediaQuery({ query: '(max-width: 475px)' })
 
   return (
     <Layout>
@@ -40,7 +42,7 @@ const IndexPage = () => {
 
       {/* Weapon section */}
       <h2 style={styles.headings2}>My Weapons</h2>
-      <div style={{ display: "flex", width: '100%' }}>
+      <div style={{ display: "flex", width: '100%', flexDirection: moveWeapons ? "column" : "row" }}>
         <div style={{ flex: 1 }}>
           <h3 style={styles.weaponType}>Primary</h3>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -73,11 +75,11 @@ const IndexPage = () => {
 
       {/* Project Section */}
       <h2 style={styles.headings2}>Selected Project</h2>
-      <div style={styles.project(true)}>
+      <div style={{ ...styles.project(true), flexDirection: moveProject ? "column" : "row" }}>
         <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={pacisBot} href="#" />
         <Card title="Himatif Apps" desc="Information system for the ‘Himatif FMIPA Unpad’ members" stack={['Laravel', 'MySQL']} imageURI={himatifApps} href="#" />
       </div>
-      <div style={styles.project(false)}>
+      <div style={{ ...styles.project(false), flexDirection: moveProject ? "column" : "row" }}>
         <Card title="Care.in" desc="Auto-fill questionnare on PACIS Unpad" stack={['React Native', 'NodeJS', 'MySQL']} imageURI={careIn} href="#" />
         <Card title="Terima Curhat ASI" desc="Auto-fill questionnare on PACIS Unpad" stack={['React Native', 'Laravel', 'MySQL']} imageURI={terimaCurhatASI} href="#" />
       </div>
