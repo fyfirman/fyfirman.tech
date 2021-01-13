@@ -16,7 +16,9 @@ const Weapon = ({ href, name, secondary }) => {
         borderRadius: 0,
         width: 64,
         height: 64,
-        textAlign: 'center'
+        textAlign: 'center',
+        pointerEvents: 'none',
+        cursor: 'default'
       }}
     >
       <img
