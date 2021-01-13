@@ -47,8 +47,10 @@ export const weaponType = {
 // Project Section
 export const project = (first) => ({
   display: 'flex',
-  ...(first && { paddingRight: '15%' }),
-  ...(!first && { paddingLeft: '15%' })
+  gap: '48px',
+  marginBottom: 36,
+  ...(first && { paddingRight: 'min(calc(15vw - 80px),15%)' }),
+  ...(!first && { paddingLeft: 'min(calc(15vw - 80px),15%)' })
 })
 
 // Sosmed Section

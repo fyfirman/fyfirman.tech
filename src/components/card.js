@@ -4,7 +4,6 @@ const Card = ({ href, imageURI, title, desc, stack }) => {
   return (
     <div
       style={{
-        margin: '0 48px 48px 0',
         borderRadius: 0,
         textDecoration: 'none',
         color: 'black'
