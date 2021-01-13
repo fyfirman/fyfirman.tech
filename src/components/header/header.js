@@ -1,8 +1,6 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import "@fontsource/nunito-sans"
-
 import * as styles from "./header.styles"
 import Logo from "../../images/logo.svg"
 

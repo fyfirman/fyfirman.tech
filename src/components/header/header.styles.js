@@ -6,7 +6,8 @@ export const root = {
   width: '100%',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  minWidth: 0
 }
 
 export const logo = {

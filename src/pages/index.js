@@ -27,7 +27,7 @@ const IndexPage = () => (
         <p style={styles.aboutMe}>Now I am a final year student at Padjadjaran University and am looking for a job at a company that has strong technological qualities so that I can learn a lot from that company.</p>
       </div>
       <div style={{ flex: "1" }}>
-        <img src={Self} alt="" srcset="" />
+        <img src={Self} alt="me"/>
       </div>
     </div>
 
