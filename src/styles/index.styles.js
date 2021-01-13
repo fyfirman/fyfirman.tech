@@ -47,7 +47,7 @@ export const weaponType = {
 // Project Section
 export const project = (first) => ({
   display: 'flex',
-  gap: '48px',
+  gap: 'min(4vw,48px)',
   marginBottom: 36,
   ...(first && { paddingRight: 'min(calc(15vw - 80px),15%)' }),
   ...(!first && { paddingLeft: 'min(calc(15vw - 80px),15%)' })
