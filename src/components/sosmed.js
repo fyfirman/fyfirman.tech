@@ -1,7 +1,10 @@
 import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 const Weapon = ({ href, name, middle, position }) => {
   const imageURI = require(`../images/sosmed/${name.toLowerCase().split(' ').join('-')}.svg`)
+
+  const resize = useMediaQuery({ query: '(max-width: 530px)' })
 
   return (
     <a
@@ -10,31 +13,34 @@ const Weapon = ({ href, name, middle, position }) => {
         display: 'flex',
         justifyContent: 'center',
         padding: '16px',
-        margin: '8px 24px',
+        margin: resize ? '8px 16px': '8px 24px',
         backgroundColor: !middle ? 'white' : 'black',
         boxShadow: "2px 4px 12px 0px rgba(0, 0, 0, 0.1)",
         borderRadius: 0,
         width: 64,
-        height: 64,
+        minWidth: resize ? 56 : 64,
+        aspectRatio: 1,
         textAlign: 'center',
         transform: 'rotate(45deg)',
         ...(position === 'top' && {
           position: 'relative',
-          top: '-48px',
-          left: '56px'
+          top: resize ? -40 : -48,
+          left: resize ? 44 : 56
         }),
         ...(position === 'bottom' && {
           position: 'relative',
-          bottom: '-48px',
-          left: '-56px'
+          top: resize ? 40 : 48,
+          left: resize ? -44 : -56
         }),
         ...(position === 'left' && {
           position: 'relative',
-          left: '80px'
+          left: resize ? 72 : 80
+          // left: 'min(10vw,80px)'
         }),
         ...(position === 'right' && {
           position: 'relative',
-          left: '-80px',
+          left: resize ? -72 : -80
+          // left: 'max(-10vw,-80px)'
         })
       }}
     >
