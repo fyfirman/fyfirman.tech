@@ -32,5 +32,6 @@ export const button = {
   color: 'black',
   textTransform: 'uppercase',
   fontSize: 14,
-  fontWeight: 700
+  fontWeight: 700,
+  cursor: 'pointer'
 }

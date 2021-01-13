@@ -35,12 +35,10 @@ const Weapon = ({ href, name, middle, position }) => {
         ...(position === 'left' && {
           position: 'relative',
           left: resize ? 72 : 80
-          // left: 'min(10vw,80px)'
         }),
         ...(position === 'right' && {
           position: 'relative',
           left: resize ? -72 : -80
-          // left: 'max(-10vw,-80px)'
         })
       }}
     >

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import { useMediaQuery } from 'react-responsive'
 import { Link } from "gatsby"
 
@@ -16,12 +16,15 @@ import Self from "../images/self.jpg"
 
 const IndexPage = () => {
 
+  const projectRef = useRef(null)
+  const contactRef = useRef(null)
+
   const movePhoto = useMediaQuery({ query: '(max-width: 820px)' })
   const moveWeapons = useMediaQuery({ query: '(max-width: 720px)' })
   const moveProject = useMediaQuery({ query: '(max-width: 475px)' })
 
   return (
-    <Layout>
+    <Layout projectRef={projectRef} contactRef={contactRef}>
       <SEO title="Home" />
 
       {/* About section */}
@@ -65,7 +68,7 @@ const IndexPage = () => {
               <Weapon href="#" name="Docker" />
               <Weapon href="#" name="CodeIginiter" />
             </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", justifyContent: "center" }} ref={projectRef} >
               <Weapon href="#" name="Java" />
               <Weapon href="#" name="Python" />
             </div>
@@ -87,7 +90,7 @@ const IndexPage = () => {
 
       {/* Contact Section */}
       <h2 style={styles.headings2}>Get In Touch With Me</h2>
-      <div style={styles.sosmed}>
+      <div ref={contactRef} style={styles.sosmed}>
         <Sosmed name="Instagram" href="https://intagram.com/fyfirman" position="left" />
         <Sosmed name="Github" href="https://github.com/fyfirman" position="left" />
         <Sosmed name="Email" href="mailto:fyfirman@gmail.com" position="top" middle />

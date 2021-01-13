@@ -5,7 +5,10 @@ import "@fontsource/nunito-sans"
 import * as styles from "./header.styles"
 import Logo from "../../images/logo.svg"
 
-const Header = () => {
+const Header = ({ projectRef, contactRef }) => {
+
+  const moveTo = (ref) => ref.current.scrollIntoView()
+
   return (
     <header>
       <div style={styles.root}>
@@ -13,8 +16,8 @@ const Header = () => {
           <Link to="#" style={{ flex: 1 }}>
             <img src={Logo} alt="fyfirman.tech" style={{ margin: 0 }} /></Link>
           <div style={styles.nav}>
-            <a href="#" style={styles.button}>Projects</a>
-            <a href="#" style={styles.button}>About</a>
+            <a onClick={() => moveTo(projectRef)} style={styles.button}>Projects</a>
+            <a onClick={() => moveTo(contactRef)} style={styles.button}>Contact</a>
           </div>
         </div>
       </div>
