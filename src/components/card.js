@@ -44,7 +44,7 @@ const Card = ({ href, imageURI, title, desc, stack }) => {
           color: '#696969',
           lineHeight: '145.1%',
           margin: '8px 0'
-        }}>Build with : {stack.join(',')}</p>
+        }}>Build with : {stack.join(', ')}</p>
       <a
         href={href}
         style={{

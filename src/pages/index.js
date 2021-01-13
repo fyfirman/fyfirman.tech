@@ -68,11 +68,11 @@ const IndexPage = () => (
     <h2 style={styles.headings2}>Selected Project</h2>
     <div style={styles.project(true)}>
       <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={pacisBot} href="#" />
-      <Card title="Himatif Apps" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={himatifApps} href="#" />
+      <Card title="Himatif Apps" desc="Information system for the ‘Himatif FMIPA Unpad’ members" stack={['Laravel', 'MySQL']} imageURI={himatifApps} href="#" />
     </div>
     <div style={styles.project(false)}>
-      <Card title="Care.in" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={careIn} href="#" />
-      <Card title="Terima Curhat ASI" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={terimaCurhatASI} href="#" />
+      <Card title="Care.in" desc="Auto-fill questionnare on PACIS Unpad" stack={['React Native', 'NodeJS', 'MySQL']} imageURI={careIn} href="#" />
+      <Card title="Terima Curhat ASI" desc="Auto-fill questionnare on PACIS Unpad" stack={['React Native', 'Laravel', 'MySQL']} imageURI={terimaCurhatASI} href="#" />
     </div>
     {/* <Link to="/project/">See All Project</Link> <br /> */}
 
