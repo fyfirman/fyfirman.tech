@@ -16,6 +16,8 @@ import Self from "../images/self.jpg"
 
 const IndexPage = () => {
 
+  console.log("halo, mau cari apa bos?")
+
   const projectRef = useRef(null)
   const contactRef = useRef(null)
 
@@ -79,12 +81,12 @@ const IndexPage = () => {
       {/* Project Section */}
       <h2 style={styles.headings2}>Selected Project</h2>
       <div style={{ ...styles.project(true), flexDirection: moveProject ? "column" : "row" }}>
-        <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={pacisBot} href="#" />
-        <Card title="Himatif Apps" desc="Information system for the ‘Himatif FMIPA Unpad’ members" stack={['Laravel', 'MySQL']} imageURI={himatifApps} href="#" />
+        <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={pacisBot} href="https://github.com/fyfirman/pacis-questionnaire-bot" />
+        <Card title="Himatif Apps" desc="Information system for the ‘Himatif FMIPA Unpad’ members" stack={['Laravel', 'MySQL']} imageURI={himatifApps} href="https://apps.himatif.org/" />
       </div>
       <div style={{ ...styles.project(false), flexDirection: moveProject ? "column" : "row" }}>
-        <Card title="Care.in" desc="Auto-fill questionnare on PACIS Unpad" stack={['React Native', 'NodeJS', 'MySQL']} imageURI={careIn} href="#" />
-        <Card title="Terima Curhat ASI" desc="Auto-fill questionnare on PACIS Unpad" stack={['React Native', 'Laravel', 'MySQL']} imageURI={terimaCurhatASI} href="#" />
+        <Card title="Care.in" desc="Health services in person by ordering via application" stack={['React Native', 'NodeJS', 'MySQL']} imageURI={careIn} href="https://play.google.com/store/apps/details?id=com.carein" />
+        <Card title="Terima Curhat ASI" desc="Application to retrieve an consultation about exclusive breast feeding" stack={['React Native', 'Laravel', 'MySQL']} imageURI={terimaCurhatASI} href="#" notAvailable />
       </div>
       {/* <Link to="/project/">See All Project</Link> <br /> */}
 

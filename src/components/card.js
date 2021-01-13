@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({ href, imageURI, title, desc, stack }) => {
+const Card = ({ href, imageURI, title, desc, stack, notAvailable }) => {
   return (
     <div
       style={{
@@ -57,8 +57,8 @@ const Card = ({ href, imageURI, title, desc, stack }) => {
           textDecoration: 'none'
         }}
       >
-        See Project ›
-    </a >
+        {!notAvailable ? 'See Project ›' : 'Not available yet'}
+      </a >
     </div>
   )
 }
