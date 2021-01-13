@@ -1,5 +1,4 @@
 export const root = {
-  padding: `20px`,
   backgroundColor: 'white',
   position: 'fixed',
   top: 0,
@@ -7,7 +6,13 @@ export const root = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  minWidth: 0
+}
+
+export const header = {
+  width: '100%',
+  maxWidth: 960,
+  display: 'flex',
+  padding: '20px 8px'
 }
 
 export const logo = {
@@ -15,9 +20,13 @@ export const logo = {
   textDecoration: `none`,
 }
 
+export const nav = {
+  display: 'flex',
+  gap: 'max(calc(10vw - 60px), 16px)'
+}
+
 export const button = {
-  margin: 0,
-  padding: '0 20px',
+  height: '100%',
   fontFamily: 'Nunito Sans',
   textDecoration: 'none',
   color: 'black',
