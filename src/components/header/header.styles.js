@@ -1,4 +1,5 @@
 export const root = {
+  zIndex: 999,
   backgroundColor: 'white',
   position: 'fixed',
   top: 0,
