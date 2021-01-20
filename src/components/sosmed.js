@@ -1,5 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
+import "../styles/sosmed.scss"
 
 const Weapon = ({ href, name, middle, position }) => {
   const imageURI = require(`../images/sosmed/${name.toLowerCase().split(' ').join('-')}.svg`)
@@ -9,27 +10,9 @@ const Weapon = ({ href, name, middle, position }) => {
   return (
     <a
       href={href}
-      className="sosmed"
+      className={"sosmed " + position}
       style={{
-        backgroundColor: !middle ? 'white' : 'black',
-        ...(position === 'top' && {
-          position: 'relative',
-          top: resize ? -40 : -48,
-          left: resize ? 44 : 56
-        }),
-        ...(position === 'bottom' && {
-          position: 'relative',
-          top: resize ? 40 : 48,
-          left: resize ? -44 : -56
-        }),
-        ...(position === 'left' && {
-          position: 'relative',
-          left: resize ? 72 : 80
-        }),
-        ...(position === 'right' && {
-          position: 'relative',
-          left: resize ? -72 : -80
-        })
+        backgroundColor: !middle ? 'white' : 'black'
       }}
     >
       <img

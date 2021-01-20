@@ -4,17 +4,48 @@
   padding: 16px;
   box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.1);
   border-radius: 0;
-  width: 64;
+  width: 64px;
   aspect-ratio: 1;
   text-align: center;
   transform: rotate(45deg);
-  min-width: 64;
-  margin: 8px 16px;
+  margin: 8px 24px;
+  min-width: 64px;
+  position: relative;
+}
+
+.sosmed.top {
+  top: -48px;
+  left: 56px;
+}
+.sosmed.bottom {
+  top: 48px;
+  left: -56px;
+}
+.sosmed.left {
+  left: 80px;
+}
+.sosmed.right {
+  left: -80px;
 }
 
 @media only screen and (max-width: 530px) {
   .sosmed {
-    min-width: 64;
-    margin: 8px 24px;
+    min-width: 56px;
+    margin: 8px 16px;
+  }
+
+  .sosmed.top {
+    top: -40px;
+    left: 44px;
+  }
+  .sosmed.bottom {
+    top: 40px;
+    left: -44px;
+  }
+  .sosmed.left {
+    left: 72px;
+  }
+  .sosmed.right {
+    left: -72px;
   }
 }
