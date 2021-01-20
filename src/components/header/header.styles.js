@@ -12,12 +12,17 @@ export const root = {
 export const header = {
   width: '100%',
   maxWidth: 960,
-  display: 'flex'
+  display: 'flex',
+  lineHeight: '40px',
+  justifyContent: 'space-between'
 }
 
 export const logo = {
+  display: 'inline-block',
+  verticalAlign: 'middle',
   color: `black`,
   textDecoration: `none`,
+  margin: 0
 }
 
 export const nav = {
@@ -26,12 +31,13 @@ export const nav = {
 }
 
 export const button = {
-  height: '100%',
+  display: 'inline-block',
+  verticalAlign: 'middle',
   fontFamily: 'Nunito Sans',
   textDecoration: 'none',
   color: 'black',
   textTransform: 'uppercase',
   fontSize: 14,
   fontWeight: 700,
-  cursor: 'pointer'
+  cursor: 'pointer',
 }

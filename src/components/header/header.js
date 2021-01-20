@@ -13,8 +13,9 @@ const Header = ({ projectRef, contactRef }) => {
     <header>
       <div style={styles.root}>
         <div style={styles.header}>
-          <Link to="#" style={{ flex: 1 }}>
-            <img src={Logo} alt="fyfirman.tech" style={{ margin: 0 }} /></Link>
+          <Link to="#">
+            <img src={Logo} alt="fyfirman.tech" style={styles.logo} />
+          </Link>
           <div style={styles.nav}>
             <a onClick={() => moveTo(projectRef)} style={styles.button}>Projects</a>
             <a onClick={() => moveTo(contactRef)} style={styles.button}>Contact</a>
