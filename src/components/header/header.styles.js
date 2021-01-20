@@ -6,13 +6,13 @@ export const root = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  padding: '1.5vh 1.0875rem'
 }
 
 export const header = {
   width: '100%',
   maxWidth: 960,
-  display: 'flex',
-  padding: '20px 8px'
+  display: 'flex'
 }
 
 export const logo = {
