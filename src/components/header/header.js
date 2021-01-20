@@ -13,7 +13,7 @@ const Header = ({ projectRef, contactRef }) => {
     <header>
       <div style={styles.root}>
         <div style={styles.header}>
-          <Link to="#">
+          <Link to="/">
             <img src={Logo} alt="fyfirman.tech" style={styles.logo} />
           </Link>
           <div style={styles.nav}>

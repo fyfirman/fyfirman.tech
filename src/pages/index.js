@@ -93,7 +93,7 @@ const IndexPage = () => {
       {/* Contact Section */}
       <h2 style={styles.headings2}>Get In Touch With Me</h2>
       <div style={{ maxWidth: '600px' }}>
-        <p style={styles.body}>I'm very happy to share knowledge. If you want to ask something about IT, productivy, or my college experience, feel free to discuss via Instagram.</p>
+        <p style={styles.body}>I'm very happy to share knowledge. If you want to ask something about IT, productivity, or my college experience, feel free to discuss via Instagram.</p>
         <p style={styles.body}>For business or collaboration please contact me via email (fyfirman@gmail.com) or Linkedin.</p>
       </div>
       <div ref={contactRef} style={styles.sosmed}>
