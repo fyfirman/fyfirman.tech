@@ -19,13 +19,10 @@ const IndexPage = () => {
 
   console.log("halo, mau cari apa bos?")
 
-  const projectRef = useRef(null)
-  const contactRef = useRef(null)
-
   const movePhoto = useMediaQuery({ query: '(max-width: 820px)' })
 
   return (
-    <Layout projectRef={projectRef} contactRef={contactRef}>
+    <Layout>
       <SEO title="Home" />
 
       {/* About section */}
@@ -69,7 +66,7 @@ const IndexPage = () => {
               <Weapon href="#" name="Docker" />
               <Weapon href="#" name="CodeIginiter" />
             </div>
-            <div style={{ display: "flex", justifyContent: "center" }} ref={projectRef} >
+            <div style={{ display: "flex", justifyContent: "center" }}>
               <Weapon href="#" name="Java" />
               <Weapon href="#" name="Python" />
             </div>
@@ -78,7 +75,7 @@ const IndexPage = () => {
       </div>
 
       {/* Project Section */}
-      <h2 style={styles.headings2}>Selected Project</h2>
+      <h2 style={styles.headings2} id="project-section">Selected Project</h2>
       <div className="project-container first">
         <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={pacisBot} href="https://github.com/fyfirman/pacis-questionnaire-bot" />
         <Card title="Himatif Apps" desc="Information system for the ‘Himatif FMIPA Unpad’ members" stack={['Laravel', 'MySQL']} imageURI={himatifApps} href="https://apps.himatif.org/" />
@@ -95,7 +92,7 @@ const IndexPage = () => {
         <p style={styles.body}>I'm very happy to share knowledge. If you want to ask something about IT, productivity, or my college experience, feel free to discuss via Instagram.</p>
         <p style={styles.body}>For business or collaboration please contact me via email (fyfirman@gmail.com) or Linkedin.</p>
       </div>
-      <div ref={contactRef} style={styles.sosmed}>
+      <div id="contact-section" style={styles.sosmed}>
         <Sosmed name="Instagram" href="https://intagram.com/fyfirman" position="left" />
         <Sosmed name="Github" href="https://github.com/fyfirman" position="left" />
         <Sosmed name="Email" href="mailto:fyfirman@gmail.com" position="top" middle />
