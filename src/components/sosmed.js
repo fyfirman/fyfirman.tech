@@ -12,13 +12,7 @@ const Weapon = ({ href, name, middle, position }) => {
         backgroundColor: !middle ? 'white' : 'black'
       }}
     >
-      <img
-        src={imageURI}
-        alt={name}
-        style={{
-          margin: '0',
-          transform: 'rotate(-45deg)',
-        }} />
+      <img src={imageURI} alt={name} />
     </a >
   )
 }
