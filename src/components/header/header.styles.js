@@ -27,5 +27,5 @@ export const logo = {
 
 export const nav = {
   display: 'flex',
-  gap: 'max(calc(10vw - 60px), 16px)'
+  gap: 'max(calc(10vw - 120px), 16px)'
 }
