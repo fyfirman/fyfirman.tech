@@ -93,7 +93,7 @@ const IndexPage = () => {
         <p style={styles.body}>For business or collaboration please contact me via email (fyfirman@gmail.com) or Linkedin.</p>
       </div>
       <div id="contact-section" style={styles.sosmed}>
-        <Sosmed name="Instagram" href="https://intagram.com/fyfirman" position="left" />
+        <Sosmed name="Instagram" href="https://instagram.com/fyfirman" position="left" />
         <Sosmed name="Github" href="https://github.com/fyfirman" position="left" />
         <Sosmed name="Email" href="mailto:fyfirman@gmail.com" position="top" middle />
         <Sosmed name="LinkedIn" href="https://www.linkedin.com/in/fyfirman/" position="bottom" middle />
