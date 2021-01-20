@@ -33,6 +33,7 @@ export const headings2 = {
   textTransform: 'uppercase',
   color: 'black',
   fontSize: 30,
+  letterSpacing: '2px'
 }
 
 export const weaponType = {

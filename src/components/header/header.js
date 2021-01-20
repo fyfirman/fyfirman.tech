@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import "@fontsource/nunito-sans"
 
 import * as styles from "./header.styles"
+import "./header.scss"
 import Logo from "../../images/logo.svg"
 
 const Header = ({ projectRef, contactRef }) => {
@@ -17,8 +18,8 @@ const Header = ({ projectRef, contactRef }) => {
             <img src={Logo} alt="fyfirman.tech" style={styles.logo} />
           </Link>
           <div style={styles.nav}>
-            <a onClick={() => moveTo(projectRef)} style={styles.button}>Projects</a>
-            <a onClick={() => moveTo(contactRef)} style={styles.button}>Contact</a>
+            <span onClick={() => moveTo(projectRef)} className="button">Projects</span>
+            <span onClick={() => moveTo(contactRef)} className="button">Contact</span>
           </div>
         </div>
       </div>

@@ -29,15 +29,3 @@ export const nav = {
   display: 'flex',
   gap: 'max(calc(10vw - 60px), 16px)'
 }
-
-export const button = {
-  display: 'inline-block',
-  verticalAlign: 'middle',
-  fontFamily: 'Nunito Sans',
-  textDecoration: 'none',
-  color: 'black',
-  textTransform: 'uppercase',
-  fontSize: 14,
-  fontWeight: 700,
-  cursor: 'pointer',
-}
