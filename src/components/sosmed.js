@@ -10,18 +10,7 @@ const Weapon = ({ href, name, middle, position }) => {
     <a
       href={href}
       style={{
-        display: 'flex',
-        justifyContent: 'center',
-        padding: '16px',
-        margin: resize ? '8px 16px': '8px 24px',
         backgroundColor: !middle ? 'white' : 'black',
-        boxShadow: "2px 4px 12px 0px rgba(0, 0, 0, 0.1)",
-        borderRadius: 0,
-        width: 64,
-        minWidth: resize ? 56 : 64,
-        aspectRatio: 1,
-        textAlign: 'center',
-        transform: 'rotate(45deg)',
         ...(position === 'top' && {
           position: 'relative',
           top: resize ? -40 : -48,
