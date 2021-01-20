@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import * as styles from "../styles/index.styles"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Weapon from "../components/weapon"
+import Weapon from "../components/weapon/weapon"
 import Card from '../components/card/card'
 import Sosmed from '../components/sosmed/sosmed'
 import pacisBot from "../images/project/pacis-bot.jpg"
@@ -47,28 +47,28 @@ const IndexPage = () => {
         <div style={{ flex: 1 }}>
           <h3 style={styles.weaponType}>Primary</h3>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <Weapon href="#" name="React" />
-            <Weapon href="#" name="NodeJS" />
-            <Weapon href="#" name="Git" />
-            <Weapon href="#" name="Figma" />
+            <Weapon name="React" />
+            <Weapon name="NodeJS" />
+            <Weapon name="Git" />
+            <Weapon name="Figma" />
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <Weapon href="#" name="MongoDB" />
-            <Weapon href="#" name="MySQL" />
-            <Weapon href="#" name="Ubuntu Server" />
+            <Weapon name="MongoDB" />
+            <Weapon name="MySQL" />
+            <Weapon name="Ubuntu Server" />
           </div>`
       </div>
         <div style={{ flex: 1 }}>
           <h3 style={styles.weaponType}>Secondary</h3>
           <div>
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Weapon href="#" name="Laravel" />
-              <Weapon href="#" name="Docker" />
-              <Weapon href="#" name="CodeIginiter" />
+              <Weapon name="Laravel" />
+              <Weapon name="Docker" />
+              <Weapon name="CodeIginiter" />
             </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Weapon href="#" name="Java" />
-              <Weapon href="#" name="Python" />
+              <Weapon name="Java" />
+              <Weapon name="Python" />
             </div>
           </div>
         </div>

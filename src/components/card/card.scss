@@ -65,9 +65,7 @@
 }
 
 .card-container:hover > .not-available::after{
-  height: 2px;
   opacity: 0;
-  transform: translateY(0);
 }
 
 .card-button:hover + .card-image {
