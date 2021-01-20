@@ -24,7 +24,6 @@ export const body = {
   lineHeight: '145.1%'
 }
 
-
 // Weapon Section
 export const headings2 = {
   marginTop: 96,
@@ -43,14 +42,6 @@ export const weaponType = {
   textAlign: 'center',
   textTransform: 'none'
 }
-
-// Project Section
-export const project = (first) => ({
-  display: 'flex',
-  gap: 'min(4vw,48px)',
-  ...(first && { paddingRight: 'min(calc(15vw - 80px),15%)' }),
-  ...(!first && { paddingLeft: 'min(calc(15vw - 80px),15%)' })
-})
 
 // Sosmed Section
 export const sosmed = {

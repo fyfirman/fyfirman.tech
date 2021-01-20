@@ -1,0 +1,43 @@
+.about-me {
+  flex: 4;
+  padding-right: 10%;
+}
+
+@media only screen and (max-width: 820px) {
+  .about-me {
+    padding-right: 0;
+  }
+}
+
+.project-container {
+  background-color: "red";
+  display: flex;
+  gap: min(4vw, 48px);
+  flex-direction: row;
+}
+
+.project-container.first {
+  padding-right: min(calc(15vw - 80px), 15%);
+}
+
+.project-container.last {
+  padding-left: min(calc(15vw - 80px), 15%);
+}
+
+@media only screen and (max-width: 475px) {
+  .project-container {
+    flex-direction: column;
+  }
+}
+
+.weapon-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 720px) {
+  .weapon-container {
+    flex-direction: column;
+  }
+}

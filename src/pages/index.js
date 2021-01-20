@@ -14,6 +14,8 @@ import careIn from "../images/project/carein.jpg"
 import terimaCurhatASI from "../images/project/terima-curhat-asi.jpg"
 import Self from "../images/self.jpg"
 
+import "../styles/index.scss"
+
 const IndexPage = () => {
 
   console.log("halo, mau cari apa bos?")
@@ -22,8 +24,6 @@ const IndexPage = () => {
   const contactRef = useRef(null)
 
   const movePhoto = useMediaQuery({ query: '(max-width: 820px)' })
-  const moveWeapons = useMediaQuery({ query: '(max-width: 720px)' })
-  const moveProject = useMediaQuery({ query: '(max-width: 475px)' })
 
   return (
     <Layout projectRef={projectRef} contactRef={contactRef}>
@@ -31,7 +31,7 @@ const IndexPage = () => {
 
       {/* About section */}
       <div style={{ display: "flex", alignItems: "center" }}>
-        <div style={{ flex: "4", paddingRight: !movePhoto ? '10%' : 0 }}>
+        <div className="about-me">
           <h1 style={styles.headings}>Hi, i’m firmansyah!</h1>
           <h2 style={styles.title}>student | developer | designer</h2>
           <p style={styles.body}>I entered computer world starting from my mother's orders to type a document when I was in elementary school. From there I wondered what the computer could do. The first thing I did was create a graphic design to sell game jockey services on Facebook. I found my designs very beautiful, then I called myself as the youngest great graphic designer at the age of 12. Really childish Haha.</p>
@@ -47,7 +47,7 @@ const IndexPage = () => {
 
       {/* Weapon section */}
       <h2 style={styles.headings2}>My Weapons</h2>
-      <div style={{ display: "flex", width: '100%', flexDirection: moveWeapons ? "column" : "row" }}>
+      <div className='weapon-container'>
         <div style={{ flex: 1 }}>
           <h3 style={styles.weaponType}>Primary</h3>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -80,11 +80,11 @@ const IndexPage = () => {
 
       {/* Project Section */}
       <h2 style={styles.headings2}>Selected Project</h2>
-      <div style={{ ...styles.project(true), flexDirection: moveProject ? "column" : "row" }}>
+      <div className="project-container first">
         <Card title="Pacis-bot" desc="Auto-fill questionnare on PACIS Unpad" stack={['NodeJS']} imageURI={pacisBot} href="https://github.com/fyfirman/pacis-questionnaire-bot" />
         <Card title="Himatif Apps" desc="Information system for the ‘Himatif FMIPA Unpad’ members" stack={['Laravel', 'MySQL']} imageURI={himatifApps} href="https://apps.himatif.org/" />
       </div>
-      <div style={{ ...styles.project(false), flexDirection: moveProject ? "column" : "row" }}>
+      <div className="project-container last">
         <Card title="Care.in" desc="Health services in person by ordering via application" stack={['React Native', 'NodeJS', 'MySQL']} imageURI={careIn} href="https://play.google.com/store/apps/details?id=com.carein" />
         <Card title="Terima Curhat ASI" desc="Application to retrieve an consultation about exclusive breast feeding" stack={['React Native', 'Laravel', 'MySQL']} imageURI={terimaCurhatASI} href="#" notAvailable />
       </div>
