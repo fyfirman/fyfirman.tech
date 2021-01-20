@@ -3,19 +3,10 @@ import './card.scss'
 
 const Card = ({ href, imageURI, title, desc, stack, notAvailable }) => {
   return (
-    <div
-      style={{
-        borderRadius: 0,
-        textDecoration: 'none',
-        color: 'black',
-        marginBottom: 64
-      }}>
+    <div className="card-container">
       <img
+        className="card-image"
         src={imageURI}
-        style={{
-          margin: '0',
-          width: '100%'
-        }}
         alt={title}
       />
       <h4
@@ -31,7 +22,7 @@ const Card = ({ href, imageURI, title, desc, stack, notAvailable }) => {
       </h4>
       <p className="body">{desc}</p>
       <p className="body">Build with : {stack.join(', ')}</p>
-      <a className={!notAvailable ? "card-button" : "card-button not-available" }href={href}>
+      <a className={!notAvailable ? "card-button" : "card-button not-available"} href={href}>
         {!notAvailable ? 'See Project ›' : 'Not available yet'}
       </a >
     </div>
