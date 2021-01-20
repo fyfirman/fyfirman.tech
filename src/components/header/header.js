@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
 import React from "react"
+import { Link } from "gatsby"
 import "@fontsource/nunito-sans"
 
 import * as styles from "./header.styles"

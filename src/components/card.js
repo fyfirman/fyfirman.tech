@@ -15,6 +15,7 @@ const Card = ({ href, imageURI, title, desc, stack, notAvailable }) => {
           margin: '0',
           width: '100%'
         }}
+        alt={title}
       />
       <h4
         style={{

@@ -1,11 +1,8 @@
 import React from 'react'
-import { useMediaQuery } from 'react-responsive'
 import "../styles/sosmed.scss"
 
 const Weapon = ({ href, name, middle, position }) => {
   const imageURI = require(`../images/sosmed/${name.toLowerCase().split(' ').join('-')}.svg`)
-
-  const resize = useMediaQuery({ query: '(max-width: 530px)' })
 
   return (
     <a

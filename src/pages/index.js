@@ -1,6 +1,5 @@
 import React, { useRef } from "react"
 import { useMediaQuery } from 'react-responsive'
-import { Link } from "gatsby"
 
 import * as styles from "../styles/index.styles"
 import Layout from "../components/layout"
