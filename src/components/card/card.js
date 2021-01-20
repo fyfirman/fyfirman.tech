@@ -1,4 +1,5 @@
 import React from 'react'
+import './card.scss'
 
 const Card = ({ href, imageURI, title, desc, stack, notAvailable }) => {
   return (
@@ -28,36 +29,9 @@ const Card = ({ href, imageURI, title, desc, stack, notAvailable }) => {
       >
         {title}
       </h4>
-      <p style={{
-        fontFamily: 'Nunito Sans',
-        fontWeight: 500,
-        fontSize: 14,
-        color: '#696969',
-        lineHeight: '145.1%',
-        margin: '8px 0'
-      }}>
-        {desc}
-      </p>
-      <p
-        style={{
-          fontFamily: 'Nunito Sans',
-          fontWeight: 500,
-          fontSize: 14,
-          color: '#696969',
-          lineHeight: '145.1%',
-          margin: '8px 0'
-        }}>Build with : {stack.join(', ')}</p>
-      <a
-        href={href}
-        style={{
-          fontFamily: 'Nunito Sans',
-          fontWeight: 700,
-          fontSize: 16,
-          color: 'black',
-          margin: '16px 0',
-          textDecoration: 'none'
-        }}
-      >
+      <p className="body">{desc}</p>
+      <p className="body">Build with : {stack.join(', ')}</p>
+      <a className={!notAvailable ? "card-button" : "card-button not-available" }href={href}>
         {!notAvailable ? 'See Project ›' : 'Not available yet'}
       </a >
     </div>

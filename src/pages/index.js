@@ -5,7 +5,7 @@ import * as styles from "../styles/index.styles"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Weapon from "../components/weapon"
-import Card from '../components/card'
+import Card from '../components/card/card'
 import Sosmed from '../components/sosmed'
 import pacisBot from "../images/project/pacis-bot.jpg"
 import himatifApps from "../images/project/himatif-apps.jpg"

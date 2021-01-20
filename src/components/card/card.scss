@@ -1,0 +1,23 @@
+.body {
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-size: 14px;
+  color: #696969;
+  line-height: 145.1%;
+  margin: 8px 0;
+}
+
+.card-button {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  margin: 16px 0;
+  text-decoration: none;
+}
+
+.card-button.not-available {
+  cursor: default;
+  pointer-events: none;
+  
+}
