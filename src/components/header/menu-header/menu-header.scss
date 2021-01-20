@@ -11,6 +11,7 @@
   cursor: pointer;
   letter-spacing: 2px;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .button::after {
