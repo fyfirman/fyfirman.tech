@@ -9,6 +9,7 @@ const Weapon = ({ href, name, middle, position }) => {
   return (
     <a
       href={href}
+      className="sosmed"
       style={{
         backgroundColor: !middle ? 'white' : 'black',
         ...(position === 'top' && {
