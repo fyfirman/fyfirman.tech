@@ -97,7 +97,7 @@ const IndexPage = () => {
         <Sosmed name="Github" href="https://github.com/fyfirman" position="left" />
         <Sosmed name="Email" href="mailto:fyfirman@gmail.com" position="top" middle />
         <Sosmed name="LinkedIn" href="https://www.linkedin.com/in/fyfirman/" position="bottom" middle />
-        <Sosmed name="Youtube" href="#soon" position="right" />
+        <Sosmed name="Youtube" href="https://www.youtube.com/channel/UC2KC2T2XtzkG-IQs3MItv5Q" position="right" />
         <Sosmed name="Medium" href="https://fyfirman.medium.com" position="right" />
       </div>
 
