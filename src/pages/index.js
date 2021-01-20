@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import { useMediaQuery } from 'react-responsive'
 
 import * as styles from "../styles/index.styles"
