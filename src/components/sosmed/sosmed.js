@@ -1,8 +1,8 @@
 import React from 'react'
-import "../styles/sosmed.scss"
+import "./sosmed.scss"
 
 const Weapon = ({ href, name, middle, position }) => {
-  const imageURI = require(`../images/sosmed/${name.toLowerCase().split(' ').join('-')}.svg`)
+  const imageURI = require(`../../images/sosmed/${name.toLowerCase().split(' ').join('-')}.svg`)
 
   return (
     <a
