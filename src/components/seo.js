@@ -25,7 +25,7 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
   return (
@@ -34,7 +34,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle}
       meta={[
         {
           name: `description`,
@@ -49,8 +49,16 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: 'https://fyfirman.tech',
+        },
+        {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: `https://link.fyfirman.tech/img/seo.jpg`,
         },
         {
           name: `twitter:card`,
@@ -77,13 +85,14 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  title: 'Firmansyah Yanuar'
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO
