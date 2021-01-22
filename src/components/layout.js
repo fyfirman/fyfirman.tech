@@ -27,7 +27,10 @@ const Layout = ({ children, projectRef, contactRef }) => {
   useEffect(() => {
     document.title = "Loading...";
     setTimeout(() => {
-      document.fonts.load("12px Nunito Sans").then(() => setIsReady(true));
+      document.fonts.load("12px Nunito Sans").then(() => {
+        document.title = "Firmansyah Yanuar"
+        setIsReady(true)
+      });
     }, 1000);
   }, [])
 
