@@ -71,10 +71,8 @@ const Layout = ({ children, projectRef, contactRef }) => {
         </footer>
       </div>
       {render3D &&
-        (<div className="spline-container">
-          <iframe id="spline-geo-1" src="https://status.fyfirman.tech/spline-geo-1/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
-          <iframe id="spline-geo-2" src="https://status.fyfirman.tech/spline-geo-2/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
-          <iframe id="spline-danbo" src="https://status.fyfirman.tech/spline-danbo-final/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
+        (<div className="spline-container right">
+          <iframe id="spline-danbo" src="https://status.fyfirman.tech/spline-danbo-final/" frameBorder="0" allowtransparency="true" />
         </div>)}
     </>
     :

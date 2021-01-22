@@ -20,6 +20,9 @@ const IndexPage = () => {
   console.log("halo, mau cari apa bos?")
 
   const movePhoto = useMediaQuery({ query: '(max-width: 820px)' })
+  const render3D = useMediaQuery({
+    query: '(min-device-width: 1080px)'
+  })
 
   return (
     <Layout>
@@ -38,8 +41,11 @@ const IndexPage = () => {
         {!movePhoto && <div style={{ flex: "1" }}>
           <img src={Self} alt="me" />
         </div>}
-
       </div>
+
+      {render3D && <div className="spline-container">
+        <iframe id="spline-geo-1" src="https://status.fyfirman.tech/spline-geo-1/" frameBorder="0" allowtransparency="true" />
+      </div>}
 
       {/* Weapon section */}
       <h2 style={styles.headings2}>My Weapons</h2>
@@ -85,6 +91,10 @@ const IndexPage = () => {
         <Card title="Terima Curhat ASI" desc="Application to retrieve an consultation about exclusive breast feeding" stack={['React Native', 'Laravel', 'MySQL']} imageURI={terimaCurhatASI} href="#" notAvailable />
       </div>
       {/* <Link to="/project/">See All Project</Link> <br /> */}
+
+      {render3D && <div className="spline-container">
+        <iframe id="spline-geo-2" src="https://status.fyfirman.tech/spline-geo-2/" frameBorder="0" allowtransparency="true" />
+      </div>}
 
       {/* Contact Section */}
       <h2 style={styles.headings2}>Get In Touch With Me</h2>
