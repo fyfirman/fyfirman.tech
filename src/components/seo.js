@@ -58,7 +58,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://link.fyfirman.tech/img/seo.jpg`,
+          content: `https://fyfirman.tech/img/seo.jpg`,
         },
         {
           name: `twitter:card`,

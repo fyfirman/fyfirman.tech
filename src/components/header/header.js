@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import "@fontsource/nunito-sans"
 
 import * as styles from "./header.styles"
 import MenuHeader from "./menu-header/menu-header"

@@ -23,7 +23,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO />
 
       {/* About section */}
       <div style={{ display: "flex", alignItems: "center" }}>
