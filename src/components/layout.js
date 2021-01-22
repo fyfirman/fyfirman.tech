@@ -13,6 +13,7 @@ import { useMediaQuery } from 'react-responsive'
 import "@fontsource/nunito-sans"
 
 import "./layout.css"
+import SEO from "../components/seo"
 import animationData from "../lotties/loading-animation.json"
 import Header from "./header/header"
 import end from '../images/end.svg'
@@ -51,6 +52,7 @@ const Layout = ({ children, projectRef, contactRef }) => {
 
   return (isReady ?
     <>
+      <SEO />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} projectRef={projectRef} contactRef={contactRef} />
       <div
         style={{
@@ -76,9 +78,12 @@ const Layout = ({ children, projectRef, contactRef }) => {
         </div>)}
     </>
     :
-    <div style={{ display: "flex", alignItems: "center", height: '100vh' }}>
-      <Lottie options={lottieOptions} height={250} width={250} />
-    </div>
+    <>
+      <SEO />
+      <div style={{ display: "flex", alignItems: "center", height: '100vh' }}>
+        <Lottie options={lottieOptions} height={250} width={250} />
+      </div>
+    </>
   )
 }
 

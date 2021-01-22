@@ -3,7 +3,6 @@ import { useMediaQuery } from 'react-responsive'
 
 import * as styles from "../styles/index.styles"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Weapon from "../components/weapon/weapon"
 import Card from '../components/card/card'
 import Sosmed from '../components/sosmed/sosmed'
@@ -26,8 +25,6 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO />
-
       {/* About section */}
       <div style={{ display: "flex", alignItems: "center" }}>
         <div className="about-me">
