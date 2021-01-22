@@ -9,6 +9,7 @@ import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Lottie from 'react-lottie'
+import { useMediaQuery } from 'react-responsive'
 import "@fontsource/nunito-sans"
 
 import "./layout.css"
@@ -18,7 +19,9 @@ import end from '../images/end.svg'
 
 const Layout = ({ children, projectRef, contactRef }) => {
   const [isReady, setIsReady] = useState(false);
-  const [render3D, setRender3D] = useState(true);
+  const render3D = useMediaQuery({
+    query: '(min-device-width: 1080px)'
+  })
 
   useEffect(() => {
     document.title = "Loading...";
@@ -67,10 +70,12 @@ const Layout = ({ children, projectRef, contactRef }) => {
           <img src={end} alt="Firmansyah Yanuar" />
         </footer>
       </div>
-      <div className="spline-container">
-        <iframe src="https://status.fyfirman.tech/spline/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
-        <iframe src="https://status.fyfirman.tech/spline/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
-      </div>
+      {render3D &&
+        (<div className="spline-container">
+          <iframe id="spline-geo-1" src="https://status.fyfirman.tech/spline-geo-1/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
+          <iframe id="spline-geo-2" src="https://status.fyfirman.tech/spline-geo-2/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
+          <iframe id="spline-danbo" src="https://status.fyfirman.tech/spline-danbo-final/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
+        </div>)}
     </>
     :
     <div style={{ display: "flex", alignItems: "center", height: '100vh' }}>
