@@ -595,3 +595,13 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.spline-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}

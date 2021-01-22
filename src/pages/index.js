@@ -100,7 +100,6 @@ const IndexPage = () => {
         <Sosmed name="Youtube" href="https://www.youtube.com/channel/UC2KC2T2XtzkG-IQs3MItv5Q" position="right" />
         <Sosmed name="Medium" href="https://fyfirman.medium.com" position="right" />
       </div>
-
     </Layout >
   )
 }

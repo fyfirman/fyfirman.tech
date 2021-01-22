@@ -18,6 +18,7 @@ import end from '../images/end.svg'
 
 const Layout = ({ children, projectRef, contactRef }) => {
   const [isReady, setIsReady] = useState(false);
+  const [render3D, setRender3D] = useState(true);
 
   useEffect(() => {
     document.title = "Loading...";
@@ -45,7 +46,7 @@ const Layout = ({ children, projectRef, contactRef }) => {
     }
   };
 
-  return ( isReady ?
+  return (isReady ?
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} projectRef={projectRef} contactRef={contactRef} />
       <div
@@ -65,6 +66,10 @@ const Layout = ({ children, projectRef, contactRef }) => {
         >
           <img src={end} alt="Firmansyah Yanuar" />
         </footer>
+      </div>
+      <div className="spline-container">
+        <iframe src="https://status.fyfirman.tech/spline/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
+        <iframe src="https://status.fyfirman.tech/spline/" style={{ width: 'calc(50vw-550px)', height: 300 }} frameBorder="0" allowtransparency="true" />
       </div>
     </>
     :
