@@ -41,7 +41,7 @@ const IndexPage = () => {
       </div>
 
       {render3D && <div className="spline-container">
-        <iframe id="spline-geo-1" src="https://status.fyfirman.tech/spline-geo-1/" frameBorder="0" allowtransparency="true" />
+        <iframe title="3d-spline-geo-1" id="spline-geo-1" src="https://status.fyfirman.tech/spline-geo-1/" frameBorder="0" allowtransparency="true" />
       </div>}
 
       {/* Weapon section */}
@@ -90,7 +90,7 @@ const IndexPage = () => {
       {/* <Link to="/project/">See All Project</Link> <br /> */}
 
       {render3D && <div className="spline-container">
-        <iframe id="spline-geo-2" src="https://status.fyfirman.tech/spline-geo-2/" frameBorder="0" allowtransparency="true" />
+        <iframe title="3d-spline-geo-2" id="spline-geo-2" src="https://status.fyfirman.tech/spline-geo-2/" frameBorder="0" allowtransparency="true" />
       </div>}
 
       {/* Contact Section */}

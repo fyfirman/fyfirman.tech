@@ -77,7 +77,7 @@ const Layout = ({ children, projectRef, contactRef }) => {
       </div>
       {render3D &&
         (<div className="spline-container right">
-          <iframe id="spline-danbo" src="https://status.fyfirman.tech/spline-danbo-final/" frameBorder="0" allowtransparency="true" />
+          <iframe title="3d-spline-danbo" id="spline-danbo" src="https://status.fyfirman.tech/spline-danbo-final/" frameBorder="0" allowtransparency="true" />
         </div>)}
     </>
     :
