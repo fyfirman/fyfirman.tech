@@ -12,7 +12,7 @@
   margin: 8px 24px;
   min-width: 64px;
   position: relative;
-  transition: transform 0.5s;
+  transition: transform 0.5s, background-color 0.5s;
   -webkit-tap-highlight-color: transparent;
   background-color: var(--bg-sosmed);
 }
@@ -21,7 +21,7 @@
   margin: 0;
   aspect-ratio: 1;
   transform: rotate(-45deg);
-  transition: transform 0.5s;
+  transition: transform 0.5s, filter 0.5s;
   width: 32px;
   filter: var(--filter);
 }
