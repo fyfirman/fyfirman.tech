@@ -51,7 +51,7 @@ const IndexPage = () => {
         <div style={{ flex: 1 }}>
           <h3 style={styles.weaponType}>Primary</h3>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <Weapon name="React" color="#ff0000"/>
+            <Weapon name="React" />
             <Weapon name="NodeJS" />
             <Weapon name="Git" />
             <Weapon name="Figma" />
@@ -61,7 +61,7 @@ const IndexPage = () => {
             <Weapon name="MySQL" />
             <Weapon name="Ubuntu Server" />
           </div>
-      </div>
+        </div>
         <div style={{ flex: 1 }}>
           <h3 style={styles.weaponType}>Secondary</h3>
           <div>
