@@ -35,7 +35,7 @@ const IndexPage = () => {
           <p style={styles.body}>Now I am a final year student at Padjadjaran University and am <span class="highlight">looking for a job (fulltime/intern)</span> at a company that has strong technological qualities so that I can learn a lot from that company.</p>
         </div>
 
-        {!movePhoto && <div style={{ flex: "1" }}>
+        {!movePhoto && <div className="photo-profile">
           <img src={Self} alt="me" />
         </div>}
       </div>

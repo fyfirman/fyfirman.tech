@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Firmansyah Yanuar`,
-    description: `Personal websites of Firmansyah Yanuar (Student, Developer, Desinger)`,
+    description: `Personal websites of Firmansyah Yanuar (Student, Developer, Designer)`,
     author: `fyfirman`,
   },
   plugins: [
