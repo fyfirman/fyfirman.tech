@@ -24,7 +24,9 @@ export const logo = {
   verticalAlign: 'middle',
   color: `black`,
   textDecoration: `none`,
-  margin: 0
+  margin: 0,
+  filter: 'var(--filter)',
+  transition: 'filter 0.5s'
 }
 
 export const nav = {

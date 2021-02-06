@@ -9,7 +9,7 @@ const Sosmed = ({ href, name, middle, position }) => {
       href={href}
       className={"sosmed " + position + " " + (middle ? "middle" : "")}
     >
-      <object type="image/svg+xml" data={imageURI} class="svg">
+      <object type="image/svg+xml" data={imageURI} className="svg">
         {name}
       </object>
     </a >

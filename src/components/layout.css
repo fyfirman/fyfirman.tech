@@ -632,3 +632,7 @@ pre tt:after {
   bottom: -10%;
   right: 10px;
 }
+
+.end {
+  filter: var(--filter);
+}

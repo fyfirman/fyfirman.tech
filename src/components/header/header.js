@@ -11,7 +11,9 @@ const Header = () => (
     <div style={styles.root}>
       <div style={styles.header}>
         <Link to="/">
-          <img src={Logo} alt="fyfirman.tech" style={styles.logo} />
+          <object type="image/svg+xml" data={Logo} style={styles.logo}>
+            fyfirman.tech
+          </object>
         </Link>
         <div style={styles.nav}>
           <MenuHeader
@@ -22,7 +24,7 @@ const Header = () => (
             to="contact-section"
             title="Contact"
           />
-          <DarkToggler/>
+          <DarkToggler />
         </div>
       </div>
     </div>

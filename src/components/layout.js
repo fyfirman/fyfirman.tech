@@ -72,7 +72,9 @@ const Layout = ({ children, projectRef, contactRef }) => {
             textAlign: 'end'
           }}
         >
-          <img src={end} alt="Firmansyah Yanuar" />
+          <object type="image/svg+xml" data={end} className="end">
+            Firmansyah Yanuar
+          </object>
         </footer>
       </div>
       {render3D &&
