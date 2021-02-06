@@ -59,7 +59,7 @@ const IndexPage = () => {
             <Weapon name="MongoDB" />
             <Weapon name="MySQL" />
             <Weapon name="Ubuntu Server" />
-          </div>`
+          </div>
       </div>
         <div style={{ flex: 1 }}>
           <h3 style={styles.weaponType}>Secondary</h3>
