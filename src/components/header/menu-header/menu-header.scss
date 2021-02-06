@@ -23,7 +23,7 @@
   background-color: var(--bg-button);
   color: var(--text-button);
   padding: 0 20px;
-  transition: transform 0.3s;
+  transition: background-color 0.5s, transform 0.3s;
   transform: translateY(100%);
 
   @media (max-width: 768px) {
@@ -34,10 +34,9 @@
 .button span {
   display: block;
   background-color: var(--bg);
-  transition: transform 0.3s;
   padding: 0 20px;
-  transition: background-color 0.5s;
-  
+  transition: background-color 0.5s, transform 0.3s;
+
   @media (max-width: 768px) {
     padding: 0 10px;
   }

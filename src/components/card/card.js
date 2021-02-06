@@ -9,15 +9,7 @@ const Card = ({ href, imageURI, title, desc, stack, notAvailable }) => {
         src={imageURI}
         alt={title}
       />
-      <h4
-        style={{
-          fontFamily: 'Nunito Sans',
-          fontWeight: '700',
-          fontSize: '20px',
-          color: 'black',
-          margin: '12px 0'
-        }}
-      >
+      <h4 className="card-title">
         {title}
       </h4>
       <p className="body">{desc}</p>

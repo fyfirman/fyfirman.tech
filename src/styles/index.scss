@@ -56,12 +56,13 @@
 
 .photo-profile > img {
   margin: 0;
-  box-shadow: 10px 10px rgba($color: #000000, $alpha: 0.55);
+  box-shadow: 10px 10px var(--shadow-ava);
   transition: all 0.3s;
+  border: 0.5px solid var(--shadow-ava);
 }
 
 
 .photo-profile > img:hover {
   transform: translateX(-10px) translateY(-10px);
-  box-shadow: 20px 20px rgba($color: #000000, $alpha: 0.55);
+  box-shadow: 20px 20px var(--shadow-ava);
 }

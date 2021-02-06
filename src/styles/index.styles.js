@@ -31,7 +31,7 @@ export const headings2 = {
   fontFamily: 'Nunito Sans',
   fontWeight: 700,
   textTransform: 'uppercase',
-  color: 'black',
+  color: 'var(--text-headings)',
   fontSize: 30,
   letterSpacing: '2px'
 }

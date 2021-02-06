@@ -2,6 +2,7 @@ body {
   --bg: white;
   --bg-button: #000000d9;
   --bg-highlight: #000000d9;
+  --shadow-ava: #000000bd;
   --text-body: #000000d9;
   --text-button: #ffffffd9;
   --text-highlight: white;
@@ -15,11 +16,11 @@ body.dark {
   --bg: #141414;
   --bg-button: white;
   --bg-highlight: white;
+  --shadow-ava: #ffffff8c;
   --text-body: #ffffffd9;
   --text-button: #141414;
   --text-headings: white;
   --text-highlight: black;
-
   transition: background-color 0.5s;
   background-color: var(--bg);
 }
