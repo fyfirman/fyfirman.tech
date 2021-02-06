@@ -4,7 +4,7 @@ export const headings = {
   fontFamily: 'Nunito Sans',
   fontWeight: 700,
   textTransform: 'uppercase',
-  color: 'black',
+  color: 'var(--text-headings)',
   fontSize: 48,
   marginBottom: 8
 }
@@ -20,7 +20,7 @@ export const body = {
   fontFamily: 'Nunito Sans',
   fontWeight: 500,
   fontSize: 14,
-  color: '#69696',
+  color: 'var(--text-body)',
   lineHeight: '145.1%'
 }
 
