@@ -1,13 +1,14 @@
 export const root = {
   zIndex: 999,
-  backgroundColor: 'white',
+  backgroundColor: 'var(--bg)',
   position: 'fixed',
   top: 0,
   width: '100%',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: '1.5vh 1.0875rem'
+  padding: '1.5vh 1.0875rem',
+  transition: 'background-color 0.5s'
 }
 
 export const header = {

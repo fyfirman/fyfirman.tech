@@ -4,6 +4,10 @@ body {
 }
 
 body.dark {
+  --bg: #141414;
+  --bg-button: white;
+  --text-button: #141414;
+  --text-body: white;
   transition: background-color 0.5s;
-  background-color: black;
+  background-color: var(--bg);
 }

@@ -4,7 +4,7 @@
   vertical-align: middle;
   font-family: "Nunito Sans";
   text-decoration: none;
-  color: black;
+  color: var(--text-body);
   text-transform: uppercase;
   font-size: 10pt;
   font-weight: 700;
@@ -20,8 +20,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
-  color: white;
+  background-color: var(--bg-button);
+  color: var(--text-button);
   padding: 0 20px;
   transition: transform 0.3s;
   transform: translateY(100%);
@@ -33,7 +33,7 @@
 
 .button span {
   display: block;
-  background-color: rgba($color: #fff, $alpha: 1);
+  background-color: --bg;
   transition: transform 0.3s;
   padding: 0 20px;
   
