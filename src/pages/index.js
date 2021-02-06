@@ -12,6 +12,7 @@ import careIn from "../images/project/carein.jpg"
 import terimaCurhatASI from "../images/project/terima-curhat-asi.jpg"
 import Self from "../images/self.jpg"
 
+import "../styles/global.scss"
 import "../styles/index.scss"
 
 const IndexPage = () => {
