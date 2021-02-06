@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import Moon from "../../images/moon-sharp.svg"
 import Sun from "../../images/sunny-sharp.svg"
+import SwitchOn from "../../audio/switch-on.mp3"
+import SwitchOff from "../../audio/switch-off.mp3"
+import useAudio from "../../utils/useAudio"
 import "./dark-toggler.scss"
 
 const DarkToggler = () => {
+  const [playingOn, toggleAudioOn] = useAudio(SwitchOn);
+  const [playingOff, toggleAudioOff] = useAudio(SwitchOff);
+
   return <ThemeToggler>
     {({ theme, toggleTheme }) => (
       <button
-        onClick={() => toggleTheme(theme === 'dark' ? 'light' : 'dark')}
+        onClick={() => {
+          if (theme === 'dark') {
+            toggleTheme('light');
+            toggleAudioOn();
+          } else {
+            toggleTheme('dark');
+            toggleAudioOff();
+          }
+        }}
         className="dark-toggler"
       >
         {theme !== 'dark' ? <img src={Sun} alt="Light Mode" /> : <img src={Moon} alt="Dark Mode" />}
