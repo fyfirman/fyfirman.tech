@@ -25,6 +25,10 @@
   padding: 0 20px;
   transition: transform 0.3s;
   transform: translateY(100%);
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
 }
 
 .button span {
@@ -32,6 +36,10 @@
   background-color: rgba($color: #fff, $alpha: 1);
   transition: transform 0.3s;
   padding: 0 20px;
+  
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
 }
 
 .button:hover span,
