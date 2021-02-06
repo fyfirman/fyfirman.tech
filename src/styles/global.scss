@@ -2,6 +2,10 @@ body {
   --bg: white;
   --bg-button: #000000d9;
   --bg-highlight: #000000d9;
+  --bg-sosmed-middle: black;
+  --border-sosmed: none;
+  --filter: invert(0%);
+  --icon-sosmed: black;
   --shadow-ava: #000000bd;
   --text-body: #000000d9;
   --text-button: #ffffffd9;
@@ -16,6 +20,11 @@ body.dark {
   --bg: #141414;
   --bg-button: white;
   --bg-highlight: white;
+  --bg-sosmed: #141414;
+  --bg-sosmed-middle: #141414;
+  --border-sosmed: 0.5px solid white;
+  --filter: invert(100%);
+  --icon-sosmed: white;
   --shadow-ava: #ffffff8c;
   --text-body: #ffffffd9;
   --text-button: #141414;
