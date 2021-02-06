@@ -15,6 +15,8 @@
   transition: transform 0.5s, background-color 0.5s;
   -webkit-tap-highlight-color: transparent;
   background-color: var(--bg-sosmed);
+  position: relative;
+  // display: inline-block;
 }
 
 .sosmed .svg {
@@ -24,6 +26,15 @@
   transition: transform 0.5s, filter 0.5s;
   width: 32px;
   filter: var(--filter);
+}
+
+.sosmed:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .sosmed:hover {
@@ -62,25 +73,27 @@
 
 @media only screen and (max-width: 530px) {
   .sosmed {
-    margin: 8px 20px;
+    margin: 8px 18px;
+    width: 56px;
+    min-width: 56px;
   }
   .sosmed .svg {
-    min-width: 20px;
+    min-width: 18px;
   }
 
   .sosmed.top {
-    top: -48px;
-    left: 52px;
+    top: -58px;
+    left: 46px;
   }
   .sosmed.bottom {
-    top: 48px;
-    left: -52px;
+    top: 58px;
+    left: -46px;
   }
   .sosmed.left {
-    left: 72px;
+    left: 96px;
   }
   .sosmed.right {
-    left: -72px;
+    left: -96px;
   }
 }
 
