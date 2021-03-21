@@ -28,7 +28,15 @@ module.exports = {
         icon: `src/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-dark-mode`
+    `gatsby-plugin-dark-mode`,
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: false, // optional parameter to include script in development
+        id: process.env.HOTJAR_ID,
+        sv: process.env.HOTJAR_SNIPPET_VERSION,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
