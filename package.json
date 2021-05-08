@@ -30,7 +30,9 @@
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", 
+    "personal website",
+    "fyfirman"
   ],
   "license": "0BSD",
   "scripts": {
