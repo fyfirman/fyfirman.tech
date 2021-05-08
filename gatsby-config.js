@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-hotjar`,
       options: {
-        includeInDevelopment: false, // optional parameter to include script in development
+        includeInDevelopment: true, // optional parameter to include script in development
         id: process.env.HOTJAR_ID,
         sv: process.env.HOTJAR_SNIPPET_VERSION,
       },
