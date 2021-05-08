@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
           <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-99D3JQ74X1"
+          src={"https://www.googletagmanager.com/gtag/js?id=" + process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -22,7 +22,7 @@ export default function HTML(props) {
             function gtag(){console.log("pushing data...", arguments); dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-99D3JQ74X1');
+            gtag('config', '${process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID}');
             `,
           }}
         />
