@@ -33,7 +33,7 @@ const IndexPage = () => {
           <h2 style={styles.title}>student | developer | designer</h2>
           <p style={styles.body}>I entered computer world starting from my mother's orders to type a document when I was in elementary school. From there I wondered what the computer could do. The first thing I did was create a graphic design to sell game jockey services on Facebook. I found my designs very beautiful, then I called myself as the youngest great graphic designer at the age of 12. Really childish Haha.</p>
           <p style={styles.body}>Several years later, I was introduced to programming. I feel challenged because programming is like solving a puzzle. So, I decided to get serious in this world, because I believe that the future really needs programming. I really happy to build apps/website that many people can use and writting <b>clean code</b> so that it is easy for others to understand.</p>
-          <p style={styles.body}>Now I am a final year student at Padjadjaran University and am <span className="highlight">looking for a job (fulltime/intern)</span> at a company that has strong technological qualities so that I can learn a lot from that company.</p>
+          <p style={styles.body}>Currently, i am a final year student at Universitas Padjadjaran and still learning all about software development. </p>
         </div>
 
         {!movePhoto && <div className="photo-profile">
