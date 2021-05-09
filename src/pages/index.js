@@ -86,7 +86,7 @@ const IndexPage = () => {
       </div>
       <div className="project-container last">
         <Card title="Care.in" desc="Health services in person by ordering via application" stack={['React Native', 'NodeJS', 'MySQL']} imageURI={careIn} href="https://play.google.com/store/apps/details?id=com.carein" />
-        <Card title="Terima Curhat ASI" desc="Application to retrieve an consultation about exclusive breast feeding" stack={['React Native', 'Laravel', 'MySQL']} imageURI={terimaCurhatASI} href="#" notAvailable />
+        <Card title="Terima Curhat ASI" desc="Application to retrieve an consultation about exclusive breast feeding" stack={['React Native', 'Laravel', 'MySQL']} imageURI={terimaCurhatASI} href="https://play.google.com/store/apps/details?id=com.terimacurhatasi" />
       </div>
       {/* <Link to="/project/">See All Project</Link> <br /> */}
 
