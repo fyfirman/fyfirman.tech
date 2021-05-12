@@ -64,7 +64,7 @@ const MessagePage = () => {
 
   return (<Layout title="Firmansyah Yanuar | Message">
     <h3 style={styles.title}>Send me a message</h3>
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
+    <div className="container">
       <div style={{ flex: 1 }}>
         <p style={styles.body}>
           <b>Feel free</b> to message me about anything like :
