@@ -8,8 +8,8 @@ import useAudio from "../../utils/useAudio"
 import "./dark-toggler.scss"
 
 const DarkToggler = () => {
-  const [, toggleAudioOn] = useAudio(SwitchOn);
-  const [, toggleAudioOff] = useAudio(SwitchOff);
+  // const [, toggleAudioOn] = useAudio(SwitchOn);
+  // const [, toggleAudioOff] = useAudio(SwitchOff);
 
   return <ThemeToggler>
     {({ theme, toggleTheme }) => (
@@ -17,10 +17,10 @@ const DarkToggler = () => {
         onClick={() => {
           if (theme === 'dark') {
             toggleTheme('light');
-            toggleAudioOn();
+            // toggleAudioOn();
           } else {
             toggleTheme('dark');
-            toggleAudioOff();
+            // toggleAudioOff();
           }
         }}
         className="dark-toggler"
