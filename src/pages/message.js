@@ -23,6 +23,7 @@ const MessagePage = () => {
       firebase.database().ref('messages/').push({
         date: new Date().toLocaleString(),
         senderName: name,
+        message,
         info: {
           userAgent: navigator.userAgent,
           platform: navigator.platform,
@@ -36,6 +37,14 @@ const MessagePage = () => {
             accuracy: res.data.geoplugin_locationAccuracyRadius
           }
         },
+      }).then(function (snapshot) {
+        setIsSuccess(true);
+        setIsLoading(false);
+      });
+    }, () => {
+      firebase.database().ref('messages/').push({
+        date: new Date().toLocaleString(),
+        senderName: name,
         message
       }).then(function (snapshot) {
         setIsSuccess(true);
