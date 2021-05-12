@@ -19,7 +19,7 @@ export const title = {
 export const body = {
   fontFamily: 'Nunito Sans',
   fontWeight: 500,
-  fontSize: 14,
+  fontSize: 16,
   color: 'var(--text-body)',
   lineHeight: '145.1%'
 }
@@ -50,4 +50,13 @@ export const sosmed = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center"
+}
+
+// Message Section
+export const list = {
+  fontFamily: 'Nunito Sans',
+  fontWeight: 500,
+  fontSize: 16,
+  color: 'var(--text-body)',
+  lineHeight: '80%'
 }
