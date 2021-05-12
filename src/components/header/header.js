@@ -21,17 +21,17 @@ const Header = () => {
           <div style={styles.nav}>
             {!url.includes('/message') ? <>
               <MenuHeader
-                to="/message"
-                title="Message"
-                link
-              />
-              <MenuHeader
                 to="project-section"
                 title="Project"
               />
               <MenuHeader
                 to="contact-section"
                 title="Contact"
+              />
+              <MenuHeader
+                to="/message"
+                title="Message"
+                link
               />
             </> : <>
               <MenuHeader

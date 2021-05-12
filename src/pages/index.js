@@ -14,6 +14,7 @@ import Self from "../images/self.jpg"
 
 import "../styles/global.scss"
 import "../styles/index.scss"
+import { Link } from "gatsby"
 
 const IndexPage = () => {
 
@@ -99,6 +100,7 @@ const IndexPage = () => {
       <div style={{ maxWidth: '600px' }}>
         <p style={styles.body}>I'm very happy to share knowledge. If you want to ask something about IT, productivity, or my college experience, feel free to discuss via <b>Instagram</b>.</p>
         <p style={styles.body}>For <b>hiring, business, or collaboration</b> please contact me via <b>email (fyfirman@gmail.com)</b> or <b>Linkedin</b>.</p>
+        <Link to="/message" className="contact-button">Send me a message</Link>
       </div>
       <div id="contact-section" style={styles.sosmed}>
         <Sosmed name="Instagram" href="https://instagram.com/fyfirman" position="left" />

@@ -66,3 +66,28 @@
   transform: translateX(-10px) translateY(-10px);
   box-shadow: 20px 20px var(--shadow-ava);
 }
+
+.contact-button {
+  color: var(--text-button);
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  background-color: var(--bg-button);
+  font-size: 0.875rem;
+  border: none;
+  padding: 12px;
+  letter-spacing: 2px;
+  box-shadow: 6px 6px var(--shadow-ava);
+  transition: all 0.2s;
+  border: 0.5px solid var(--shadow-ava);
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  transform: translateX(-6px) translateY(-6px);
+  box-shadow: 12px 12px var(--shadow-ava);
+}
+
+.contact-button:active{
+  transform: translateX(3px) translateY(3px);
+  box-shadow: 3px 3px var(--shadow-ava);
+}
