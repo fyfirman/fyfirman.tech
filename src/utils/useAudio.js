@@ -5,6 +5,8 @@ const useAudio = () => {
     audioPlayer: {},
     currentTrackIndex: null,
     isPlaying: false,
+    play: () => {},
+    pause: () => {},
   })
   const [playing, setPlaying] = useState(false);
 
