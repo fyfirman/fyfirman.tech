@@ -1,19 +1,29 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
 import * as styles from "../styles/index.styles"
+import firebase from "gatsby-plugin-firebase"
 import "../styles/message.scss"
 
 const MessagePage = () => {
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
   const [error, setError] = useState(false)
+  const [isSuccess, setIsSuccess] = useState(null)
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!message) {
-      setError(true)
+      setError({ isError: true, message: "Please fill your message" })
+      return;
     }
-    console.log(name, message)
+    firebase.database().ref('messages/').push({ senderName: name, message })
+      .then(function (snapshot) {
+        console.log(snapshot)
+        setIsSuccess(true);
+      }, (e) => {
+        setError({ isError: true, message: e.message })
+        console.error(error);
+      });
   }
 
   return (<Layout title="Firmansyah Yanuar | Message">
@@ -68,8 +78,9 @@ const MessagePage = () => {
         <input
           type="submit"
           className="send-button"
-          value="SEND"
-          onClick={handleSubmit} />
+          value={!isSuccess ? "SEND" : "Message sent! Thank you"}
+          onClick={handleSubmit}
+          disabled={isSuccess} />
         <span style={{
           width: '100%',
           color: '#FF0000',
@@ -77,7 +88,7 @@ const MessagePage = () => {
           fontWeight: 500,
           fontSize: '0.875rem',
           visibility: !error ? "hidden" : "visible"
-        }}>Please fill your message</span>
+        }}>{error?.message ?? ''}</span>
       </form>
     </div>
   </Layout>)

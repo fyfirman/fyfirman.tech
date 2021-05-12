@@ -6,9 +6,12 @@
   "author": "Fimansyah Yanuar <hi@fyfirman.tech>",
   "dependencies": {
     "@fontsource/nunito-sans": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "firebase": "^8.6.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
+    "gatsby-plugin-firebase": "^0.2.0-beta.4",
     "gatsby-plugin-hotjar": "^1.1.1",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
@@ -30,7 +33,7 @@
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby", 
+    "gatsby",
     "personal website",
     "fyfirman"
   ],
