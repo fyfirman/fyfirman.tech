@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useMediaQuery } from 'react-responsive'
 import "@fontsource/nunito-sans"
@@ -16,6 +16,10 @@ import Header from "./header/header"
 import end from '../images/end.svg'
 
 const Layout = ({ children, projectRef, contactRef, title }) => {
+  useEffect(() => {
+    document.title = title ?? "Firmansyah Yanuar"
+  }, [])
+
   const render3D = useMediaQuery({
     query: '(min-device-width: 1080px)'
   })
@@ -23,7 +27,7 @@ const Layout = ({ children, projectRef, contactRef, title }) => {
   return (
     <>
       <SEO />
-      <Header siteTitle={title ?? "Firmansyah Yanuar" } projectRef={projectRef} contactRef={contactRef} />
+      <Header siteTitle={title ?? "Firmansyah Yanuar"} projectRef={projectRef} contactRef={contactRef} />
       <div
         style={{
           margin: `0 auto`,
