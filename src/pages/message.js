@@ -20,8 +20,6 @@ const MessagePage = () => {
     }
     setIsLoading(true);
     axios.get("http://www.geoplugin.net/json.gp").then((res) => {
-      console.log(res.data)
-
       firebase.database().ref('messages/').push({
         date: new Date().toLocaleString(),
         senderName: name,
@@ -40,7 +38,6 @@ const MessagePage = () => {
         },
         message
       }).then(function (snapshot) {
-        console.log(snapshot)
         setIsSuccess(true);
         setIsLoading(false);
       });
