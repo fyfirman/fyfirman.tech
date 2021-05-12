@@ -88,29 +88,14 @@ const MessagePage = () => {
       <form style={{ display: 'flex', flex: 1, gap: 16, flexDirection: 'column' }}>
         <input
           type="text"
-          style={{
-            width: '100%',
-            color: 'var(--text-body)',
-            fontFamily: 'Nunito Sans',
-            fontWeight: 500,
-            fontSize: '0.875rem',
-            padding: 8,
-          }}
+          className="input"
           onChange={(e) => setName(e.target.value)}
           placeholder="Name (You can leave it blank)" />
         <textarea
           placeholder="Put your message here"
           onChange={(e) => setMessage(e.target.value)}
-          style={{
-            width: '100%',
-            height: '60%',
-            color: 'var(--text-body)',
-            fontFamily: 'Nunito Sans',
-            fontWeight: 500,
-            fontSize: '0.875rem',
-            padding: 8,
-            resize: 'none'
-          }} />
+          className="input"
+        />
         <input
           type="submit"
           className="send-button"
