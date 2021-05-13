@@ -19,9 +19,21 @@ import Header from "./header/header"
 import end from '../images/end.svg'
 
 const Layout = ({ children, projectRef, contactRef, title }) => {
+  const [isReady, setIsReady] = useState(false);
   const render3D = useMediaQuery({
     query: '(min-device-width: 1080px)'
   })
+
+  useEffect(() => {
+    document.title = "Loading...";
+    setTimeout(() => {
+      document.fonts.load("12px Nunito Sans").then(() => {
+        document.title = "Firmansyah Yanuar"
+        setIsReady(true)
+      });
+    }, 1000);
+  }, [])
+
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -42,10 +54,10 @@ const Layout = ({ children, projectRef, contactRef, title }) => {
     }
   };
 
-  return (
+  return (isReady ?
     <>
       <SEO />
-      <Header siteTitle={title || data.site.siteMetadata?.title } projectRef={projectRef} contactRef={contactRef} />
+      <Header siteTitle={title || data.site.siteMetadata?.title} projectRef={projectRef} contactRef={contactRef} />
       <div
         style={{
           margin: `0 auto`,
@@ -70,6 +82,13 @@ const Layout = ({ children, projectRef, contactRef, title }) => {
         (<div className="spline-container right">
           <iframe title="3d-spline-danbo" id="spline-danbo" src="https://status.fyfirman.tech/spline-danbo-final/" frameBorder="0" allowtransparency="true" />
         </div>)}
+    </>
+    :
+    <>
+      <SEO />
+      <div style={{ display: "flex", alignItems: "center", height: '100vh' }}>
+        <Lottie options={lottieOptions} height={250} width={250} />
+      </div>
     </>
   )
 }
