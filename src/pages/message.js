@@ -19,24 +19,12 @@ const MessagePage = () => {
       return;
     }
     setIsLoading(true);
-    axios.get("http://www.geoplugin.net/json.gp").then((res) => {
+    axios.get("https://api.ipify.org?format=json").then((res) => {
       firebase.database().ref('messages/').push({
         date: new Date().toLocaleString(),
         senderName: name,
         message,
-        info: {
-          userAgent: navigator.userAgent,
-          platform: navigator.platform,
-          ip: res.data.geoplugin_request,
-          country: res.data.geoplugin_countryName,
-          region: res.data.geoplugin_region,
-          city: res.data.geoplugin_city,
-          geolocation: {
-            latitude: res.data.geoplugin_latitude,
-            longitude: res.data.geoplugin_longitude,
-            accuracy: res.data.geoplugin_locationAccuracyRadius
-          }
-        },
+        ip: res.data.ip
       }).then(function (snapshot) {
         setIsSuccess(true);
         setIsLoading(false);
