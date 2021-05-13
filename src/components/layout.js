@@ -17,6 +17,7 @@ import Header from "./header/header"
 import end from '../images/end.svg'
 
 const Layout = ({ children, projectRef, contactRef, title }) => {
+  const [isReady, setIsReady] = useState(false);
   const render3D = useMediaQuery({
     query: '(min-device-width: 1080px)'
   })
