@@ -17,19 +17,52 @@ import Header from "./header/header"
 import end from '../images/end.svg'
 
 const Layout = ({ children, projectRef, contactRef, title }) => {
-  useEffect(() => {
-    document.title = title ?? "Firmansyah Yanuar"
-  }, [])
-
   const render3D = useMediaQuery({
     query: '(min-device-width: 1080px)'
   })
 
-  return (
+  useEffect(() => {
+    document.title = "Loading...";
+    setTimeout(() => {
+      document.fonts.load("12px Nunito Sans").then(() => {
+        document.title = title ?? "Firmansyah Yanuar"
+        setIsReady(true)
+      });
+    }, 1000);
+  }, [])
+
+
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  const lottieOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
+
+  return (isReady ?
     <>
       <SEO />
-      <Header siteTitle={title ?? "Firmansyah Yanuar"} projectRef={projectRef} contactRef={contactRef} />
-      <div className="layout-container">
+      <Header siteTitle={title || data.site.siteMetadata?.title} projectRef={projectRef} contactRef={contactRef} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+          marginTop: 120
+        }}
+      >
         <main>{children}</main>
         <footer
           style={{
@@ -47,6 +80,13 @@ const Layout = ({ children, projectRef, contactRef, title }) => {
         (<div className="spline-container right">
           <iframe title="3d-spline-danbo" id="spline-danbo" src="https://status.fyfirman.tech/spline-danbo-final/" frameBorder="0" allowtransparency="true" />
         </div>)}
+    </>
+    :
+    <>
+      <SEO />
+      <div style={{ display: "flex", alignItems: "center", height: '100vh' }}>
+        <Lottie options={lottieOptions} height={250} width={250} />
+      </div>
     </>
   )
 }
