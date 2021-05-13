@@ -9,7 +9,8 @@ import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useMediaQuery } from 'react-responsive'
 import "@fontsource/nunito-sans"
-
+import "firebase/auth"
+import "firebase/database"
 import "./layout.css"
 import SEO from "../components/seo"
 import Header from "./header/header"
@@ -43,6 +44,7 @@ const Layout = ({ children, projectRef, contactRef, title }) => {
             textAlign: 'end'
           }}
         >
+          {typeof window !== "undefined" ? "NodeJS (No SSR)" : "SSR Mode"}
           <object type="image/svg+xml" data={end} className="end">
             Firmansyah Yanuar
           </object>
