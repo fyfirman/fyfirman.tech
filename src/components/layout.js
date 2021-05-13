@@ -29,14 +29,7 @@ const Layout = ({ children, projectRef, contactRef, title }) => {
     <>
       <SEO />
       <Header siteTitle={title ?? "Firmansyah Yanuar"} projectRef={projectRef} contactRef={contactRef} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-          marginTop: 120
-        }}
-      >
+      <div className="layout-container">
         <main>{children}</main>
         <footer
           style={{

@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
-import * as styles from "../styles/index.styles"
 import firebase from "gatsby-plugin-firebase"
 import axios from "axios"
 import "../styles/message.scss"
@@ -57,13 +56,13 @@ const MessagePage = () => {
   }
 
   return (<Layout title="Firmansyah Yanuar | Message">
-    <h3 style={styles.title}>Send me a message</h3>
+    <h3 className="title">Send me a message</h3>
     <div className="container">
       <div style={{ flex: 1 }}>
-        <p style={styles.body}>
+        <p className="body">
           <b>Feel free</b> to message me about anything like :
         </p>
-        <ul style={styles.list}>
+        <ul className="list">
           <li>Impression this website</li>
           <li>Discuss about software development (web/android)</li>
           <li>Request for mentorship</li>
@@ -71,11 +70,11 @@ const MessagePage = () => {
           <li>Hard feelings for me</li>
           <li>Anything you like</li>
         </ul>
-        <p style={styles.body}>
+        <p className="body">
           You can send <b>anonymously</b> or <b>write your name</b>. If you want to
           reply, please state in the message.
         </p>
-        <p style={styles.body}>
+        <p className="body">
           Please speak with <b>human language</b>, not a programming language. 😁
         </p>
       </div>

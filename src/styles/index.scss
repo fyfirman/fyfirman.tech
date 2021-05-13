@@ -1,3 +1,71 @@
+.headings {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-headings);
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-headings);
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  margin-bottom: 60px;
+}
+
+.body {
+  font-family: Nunito Sans;
+  font-weight: 500;
+  font-size: 16;
+  color: var(--text-body);
+  line-height: 145.1%;
+}
+
+// Weapon Section
+.headings2 {
+  margin-top: 96px;
+  margin-bottom: 36;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-headings);
+  font-size: 30;
+  letter-spacing: 2px;
+}
+
+.weaponType {
+  margin-bottom: 36px;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  color: var(--text-headings);
+  letter-spacing: 2px;
+  margin-top: 16px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: none;
+}
+
+// Sosmed Section
+.sosmed-container {
+  margin: 128px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Message Section
+.list {
+  font-family: Nunito Sans;
+  font-weight: 500;
+  font-size: 16;
+  color: var(--text-body);
+  line-height: 80%;
+}
+
 .about-me {
   flex: 4;
   padding-right: 10%;
@@ -61,7 +129,6 @@
   border: 0.5px solid var(--shadow-ava);
 }
 
-
 .photo-profile > img:hover {
   transform: translateX(-10px) translateY(-10px);
   box-shadow: 20px 20px var(--shadow-ava);
@@ -87,7 +154,7 @@
   box-shadow: 12px 12px var(--shadow-ava);
 }
 
-.contact-button:active{
+.contact-button:active {
   transform: translateX(3px) translateY(3px);
   box-shadow: 3px 3px var(--shadow-ava);
 }
